@@ -54,7 +54,7 @@ app.post("/meetings", async (req, res) => {
     const newMeeting = new Meeting({ title, date, meetingId });
     await newMeeting.save();
  
-    const meetingLink = `https://meetlink-ip73.vercel.app//join-meeting/${meetingId}`;
+    const meetingLink = `https:/https://frontendmeet.vercel.app//join-meeting/${meetingId}`;
     res.status(201).json({
       message: "Meeting created successfully",
       meeting: newMeeting,
